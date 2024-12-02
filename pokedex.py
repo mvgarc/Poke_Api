@@ -6,6 +6,9 @@ from PIL import Image
 from io import BytesIO
 
 def main(page):
-    pass
+    logo_pokemon = ft.Image(
+        src=f"logo.png",
+        width=350,
+        height=170)
 
 ft.app(target=main)
