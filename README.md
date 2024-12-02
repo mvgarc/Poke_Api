@@ -22,6 +22,7 @@ Una aplicación desarrollada con [Flet](https://flet.dev/) que permite consultar
 1. Clona el repositorio o descarga los archivos del proyecto.
 
    git clone https://github.com/mvgarc/Poke_Api.git
+   
    cd Poke_Api
 
 2. Instala los requisitos necesarios.
