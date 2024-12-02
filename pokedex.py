@@ -32,7 +32,7 @@ def main(page):
             im = Image.open(urlopen(url_image))
             buffer = BytesIO()
             im.save(buffer, format="png")
-            imagen_base64 = base64.b64encode(buffer.getvalue().decode)
+            imagen_base64 = base64.b64encode(buffer.getvalue()).decode()
             pokemon_imagen.src_base64 = imagen_base64
             pokemon_imagen.update()
 
