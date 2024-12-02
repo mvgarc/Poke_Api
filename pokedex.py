@@ -26,4 +26,9 @@ def main(page):
     def btn_click(e):
         api_url_pokemon = f'https://pokeapi.co/api/v2/{nombre.value}'
         result = requests.get(api_url_pokemon)
+        if result.status_code==200:
+            pokemon_data = result.json()
+            url_image = pokemon_data['sprites']['other']['official-artwork']['front_default']
+
+
 ft.app(target=main)
