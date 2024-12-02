@@ -30,6 +30,9 @@ def main(page):
             pokemon_data = result.json()
             url_image = pokemon_data['sprites']['other']['official-artwork']['front_default']
             im = Image.open(urlopen(url_image))
+            buffer = BytesIO()
+            im.save(buffer, format="png")
+            imagen_base64 = base64.b64encode(buffer.getvalue().decode)
 
 
 ft.app(target=main)
