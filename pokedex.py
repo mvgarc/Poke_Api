@@ -29,6 +29,7 @@ def main(page):
         if result.status_code==200:
             pokemon_data = result.json()
             url_image = pokemon_data['sprites']['other']['official-artwork']['front_default']
+            im = Image.open(urlopen(url_image))
 
 
 ft.app(target=main)
