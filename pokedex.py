@@ -10,5 +10,9 @@ def main(page):
         src=f"logo.png",
         width=350,
         height=170)
+    
+    nombre = ft.TextField(
+        label ="Nombre",
+        autofocus=True)
 
 ft.app(target=main)
