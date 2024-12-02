@@ -6,7 +6,7 @@ from PIL import Image
 from io import BytesIO
 
 def main(page):
-    page.tittle = "PokeDex App"
+    page.title = "PokeDex App"
     logo_pokemon = ft.Image(
         src=f"logo.png",
         width=350,
