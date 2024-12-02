@@ -7,7 +7,6 @@ from io import BytesIO
 
 def main(page):
     page.title = "PokeDex App"
-    page.window_icon = "pokeball.ico"
     logo_pokemon = ft.Image(
         src=f"logo.png",
         width=350,
@@ -61,7 +60,10 @@ def main(page):
         pokemon_imagen
     )
 
-def new_func(page):
-    page.window_ico = "pokeball.ico"
-
-ft.app(target=main)
+if __name__ == "__main__":
+    # Ejecutar la app
+    ft.app(
+        target=main,
+        view=ft.AppView.FLET_APP,  # Cambiar a FLET_APP para escritorio o WEB_BROWSER para navegador
+        assets_dir="."  # Carpeta donde está el archivo logo.png
+    )
