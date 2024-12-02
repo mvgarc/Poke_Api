@@ -40,7 +40,9 @@ def main(page):
                 page.snack_bar = ft.SnackBar(ft.Text("Imagen no encontrada"))
                 page.snack_bar.open()
 
-        
+        else:
+            page.snack_bar = ft.SnackBar(ft.Text("Pokemón no encontrado"))
+            page.snack_bar.open()
 
 
 
