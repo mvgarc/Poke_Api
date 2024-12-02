@@ -6,6 +6,8 @@ from PIL import Image
 from io import BytesIO
 
 def main(page):
+    page.tittle = "PokeDex App"
+    page.window_ico = f"pokeball.ico"
     logo_pokemon = ft.Image(
         src=f"logo.png",
         width=350,
@@ -20,10 +22,10 @@ def main(page):
     submit = ft.ElevatedButton("Consultar")
     
     pokemon_imagen = ft.Image(
+        src=f"background.png",
         width=350,
         height=350
-    )  # Inicializamos la imagen sin ningún archivo
-
+    )
     def show_snack_bar(message):
         snack_bar = ft.SnackBar(
             content=ft.Text(message),
