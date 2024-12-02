@@ -24,6 +24,6 @@ def main(page):
     )
 
     def btn_click(e):
-        pass
+        api_url_pokemon = f'https://pokeapi.co/api/v2/{nombre.value}'
 
 ft.app(target=main)
