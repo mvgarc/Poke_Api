@@ -14,5 +14,11 @@ def main(page):
     nombre = ft.TextField(
         label ="Nombre",
         autofocus=True)
+    
+    pokemon_imagen = ft.Image(
+        src="background.png",
+        width=350,
+        height= 350
+    )
 
 ft.app(target=main)
