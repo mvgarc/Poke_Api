@@ -7,7 +7,6 @@ from io import BytesIO
 
 def main(page):
     page.tittle = "PokeDex App"
-    page.window_ico = f"pokeball.ico"
     logo_pokemon = ft.Image(
         src=f"logo.png",
         width=350,
@@ -60,5 +59,8 @@ def main(page):
         submit,
         pokemon_imagen
     )
+
+def new_func(page):
+    page.window_ico = "pokeball.ico"
 
 ft.app(target=main)
