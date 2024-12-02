@@ -23,4 +23,7 @@ def main(page):
         height= 350
     )
 
+    def btn_click(e):
+        pass
+
 ft.app(target=main)
