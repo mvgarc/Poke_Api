@@ -24,7 +24,7 @@ def main(page):
     )
 
     def btn_click(e):
-        api_url_pokemon = f'https://pokeapi.co/api/v2/{nombre.value}'
+        api_url_pokemon = f'https://pokeapi.co/api/v2/{nombre.value.lower()}'
         result = requests.get(api_url_pokemon)
         if result.status_code==200:
             pokemon_data = result.json()
