@@ -15,6 +15,8 @@ def main(page):
         label ="Nombre",
         autofocus=True)
     
+    submit = ft.ElevatedButton("Consultar")
+    
     pokemon_imagen = ft.Image(
         src="background.png",
         width=350,
