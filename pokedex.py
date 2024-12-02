@@ -36,4 +36,14 @@ def main(page):
             pokemon_imagen.src_base64 = imagen_base64
             pokemon_imagen.update()
 
+
+
+    submit.on_click = btn_click
+    page.add(
+        logo_pokemon,
+        nombre,
+        submit,
+        pokemon_imagen
+    )
+
 ft.app(target=main)
