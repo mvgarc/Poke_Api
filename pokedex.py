@@ -18,7 +18,6 @@ def main(page):
     submit = ft.ElevatedButton("Consultar")
     
     pokemon_imagen = ft.Image(
-        src="background.png",
         width=350,
         height= 350
     )
