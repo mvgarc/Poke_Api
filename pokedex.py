@@ -7,6 +7,7 @@ from io import BytesIO
 
 def main(page):
     page.title = "PokeDex App"
+    page.window_icon = "pokeball.ico"
     logo_pokemon = ft.Image(
         src=f"logo.png",
         width=350,
