@@ -29,12 +29,13 @@ def main(page):
         if result.status_code==200:
             pokemon_data = result.json()
             url_image = pokemon_data['sprites']['other']['official-artwork']['front_default']
-            im = Image.open(urlopen(url_image))
-            buffer = BytesIO()
-            im.save(buffer, format="png")
-            imagen_base64 = base64.b64encode(buffer.getvalue()).decode()
-            pokemon_imagen.src_base64 = imagen_base64
-            pokemon_imagen.update()
+            if url_image:
+                im = Image.open(urlopen(url_image))
+                buffer = BytesIO()
+                im.save(buffer, format="png")
+                imagen_base64 = base64.b64encode(buffer.getvalue()).decode()
+                pokemon_imagen.src_base64 = imagen_base64
+                pokemon_imagen.update()
 
 
 
